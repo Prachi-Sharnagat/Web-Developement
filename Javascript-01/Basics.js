@@ -1,4 +1,7 @@
 console.log("prachi sharnagat")
+
+//? let , const , var 
+
 const accountId = 1212784          // fixed 
 let accountEmail = 'prachisharnagat123@gmail.com';
 var accountPassward = '12333';
@@ -114,3 +117,102 @@ let value = 3;
 let negValue = -value;
 console.log(negValue);
 
+let str1 = "hello "
+let str2 = " prachi "
+let str3 = str1 + str2;
+console.log(str3);
+console.log(1+2+"3");
+console.log("7"+2+9);
+// bad practice 
+console.log(+true);
+console.log(+"");
+// focus on readibility 
+let num1 , num2 , num3;
+num1 = num2 = num3 = 1;
+
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter++);
+console.log(gameCounter)
+
+//! comparision of datatype
+/*
+comparision operator
+*/
+
+//? same datatype 
+console.log(2>1);
+console.log(2<1);
+console.log(2>=1);
+console.log(2<=1);
+console.log(2!= 1);
+console.log(2==1);
+
+//& compare different datatype -> avoid this :: very bad pracice 
+console.log(null > 0) // comaprison false
+console.log(null == 0) // equality false
+console.log(null >= 0) // comaprison true
+// note "comparison convert null to a number , treat it as 0 thats why null >= 0 true and null > 0 is false "
+
+console.log(undefined > 0);
+console.log(undefined >= 0);
+console.log(undefined == 0);
+
+// strick check : it also check datatype 
+console.log("2" ===  2);
+
+//* do clean code and focus on readability  
+
+//~ primitive datatype : 1.string 2.number 3. boolean 4. null 5. undefined 6.symbol 7.BigInt
+//? non - primitive (refrence) 1.arrays 2. objects 3. function
+//! javascript is dynamic language because we dont have to defined its datatype 
+const score1  = 1000;
+const score2 = 100.354 ;
+
+const id1 = Symbol('123');
+const id2 = Symbol('123');
+// note : Each symbol is unique, even if the description is the same:
+console.log(id1==id2);
+
+// use BigInt 
+// 1. Add 'n' at the end of an integer literal
+let big1 = 123456789012345678901234567890n;
+
+// let num = 10;
+// let big = 20n;
+
+// console.log(num + big); // Error: Cannot mix BigInt and other types
+const myhero = ["shubhman ", "prachi "];
+let Profile = {
+  name:'prachi',
+  ag: 20
+};
+
+const myFunction = function(){
+  console.log('hello');
+}
+
+console.log(typeof myFunction);
+console.log(typeof myhero);
+
+// memory : 
+// stack ---> primitive (copy change )
+// heap --> non - primitive (original value change )
+
+let user1 = "hello world ";
+let user2 = user1;
+user2 = "hello universe";
+console.log(user1)
+console.log(user2)
+
+const details = {
+  email : "xyz@gmail.com",
+  id: 101
+};
+
+let details2 = details;
+
+details2.email = "abc@gmail.com";
+
+console.log(details.email);
+console.log(details2.email);
