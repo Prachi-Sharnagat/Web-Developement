@@ -1,31 +1,31 @@
-// // arrays 
-// // shallow copies -> original copy 
-// // deep copy -> copy sends
+// arrays 
+// shallow copies -> original copy 
+// deep copy -> copy sends
 
-// const myArr = [1,2,33,231,3411];
-// console.log(myArr[1]);
-// myArr.shift();
+const myArr = [1,2,33,231,3411];
+console.log(myArr[1]);
+myArr.shift();
 
-// console.log(myArr);
+console.log(myArr);
 
-// myArr.push(3);
-// console.log(myArr);
-// console.log(myArr.pop());
-// myArr.unshift(9);
+myArr.push(3);
+console.log(myArr);
+console.log(myArr.pop());
+myArr.unshift(9);
 
-// console.log(myArr);
+console.log(myArr);
 
-// myArr.shift();
+myArr.shift();
 
 
-// console.log(myArr.includes(3));
-// // slice and splice 
-// // return a section of copy of array 
-// console.log(myArr);
-// const myn11 = myArr.slice(1,3); // index 3 is not included 
-// console.log(myn11);
-// console.log(myArr)
-// // difference between slice and splice 
+console.log(myArr.includes(3));
+// slice and splice 
+// return a section of copy of array 
+console.log(myArr);
+const myn11 = myArr.slice(1,3); // index 3 is not included 
+console.log(myn11);
+console.log(myArr)
+// difference between slice and splice 
 
 
 // console.log(myArr.splice(1,3)) // include 3rd index
