@@ -57,3 +57,5 @@ console.log(Array.from("prachi"))
  let score1 = 100
  let score2 = 200;
  console.log(Array.of(score1, score2))
+
+ 

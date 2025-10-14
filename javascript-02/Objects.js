@@ -47,3 +47,63 @@ console.log(jsUser.greeting()); // it shows undefined when object is freeze
 
 const user1 = new Object() //~ empty singleton object 
 const user2 = {} //? empty non singleton object 
+
+
+user1.id - "13422";
+user1.name = "prachi sharnagat"
+
+console.log(user1);
+
+const user3 = {
+    email: "xyz@gmail.com",
+    fullname : {
+        userFullName :{
+            firstName : "prachi",
+            middleName : "devendra",
+            surname : "sharnagat"
+        },
+
+    }
+}
+
+console.log(user3.fullname.userFullName.firstName);
+
+console.log(user3.fullname? 'true': "false");
+
+const obj1 = {1:"jksfjk"}
+const obj2 = {2:"jksfjk"}
+
+// const obj3 = Object.assign(obj1, obj2 ) // this will change original obj1 as obj3 
+
+// best practice :
+const obj3 = Object.assign({}, obj1, obj2) // target obj -> source merge
+// help to  merge into new emoty obj only
+
+console.log(obj3)
+console.log(obj1)
+// const obj4 = Object.assign(obj1 , obj2);
+// console.log(obj4 == obj1 ) // true 
+
+// best way :
+// best practice + easy practice:
+const obj4 = {...obj1, ...obj2} // target obj -> source merge
+
+
+console.log(obj4)
+console.log(obj1)
+// console.log(obj1)
+
+const users = [
+    {
+        id : 1
+    },
+    {
+        id : 2
+    },
+    {
+        id : 3
+    },
+   
+]
+
+console.log(users.id[1])
