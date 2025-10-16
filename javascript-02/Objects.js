@@ -105,5 +105,40 @@ const users = [
     },
    
 ]
+console.log(users[1].id);
+console.log(Object.keys(users)) // keys just no attribute
+console.log(Object.values(users)) // atribute + key
+console.log(Object.entries(users)) // index + KEYS
+console.log(users.hasOwnProperty('id')) // index + KEYS
+console.log(users.hasOwnProperty('name')) // index + KEYS
 
-console.log(users.id[1])
+
+const profile = {
+    email: "xyz@gmail.com",
+            firstName : "prachi",
+            middleName : "devendra",
+            surname : "sharnagat"
+        };
+
+        console.log(profile.surname);
+        
+        const {email} = profile;
+        console.log(email) // made easy otherwise profile.email
+ 
+        const {firstName : fn} = profile; // this is called destructuring
+        console.log(fn);
+
+        // {
+        //     email: "xyz@gmail.com", // api 
+        //     firstName : "prachi",
+        //     middleName : "devendra",
+        //     surname : "sharnagat"
+        // }
+[
+    {},
+    {},
+    {}
+] // api in array 
+
+// json --> api 
+        
